@@ -107,6 +107,13 @@ html[data-theme="dark"] .store-info p { color: rgba(232,228,222,0.7); }
 html[data-theme="dark"] .ingredient-card p { color: rgba(232,228,222,0.7); }
 html[data-theme="dark"] .contact-item { color: var(--bark); }
 html[data-theme="dark"] #contact > p { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .technical-info { background: rgba(255,255,255,0.08); border-color: rgba(122,158,126,0.3); }
+html[data-theme="dark"] .technical-info h3 { color: var(--sage); }
+html[data-theme="dark"] .technical-info p { color: rgba(232,228,222,0.8); }
+html[data-theme="dark"] .technical-info ol { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .molecule-display { background: rgba(0,0,0,0.2); }
+html[data-theme="dark"] .molecule-caption { color: rgba(232,228,222,0.6); }
+html[data-theme="dark"] .dlimonene-link { color: var(--sage); }
 html[data-fonts="custom"] {
   --font-sans: 'DM Sans', system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -453,6 +460,9 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       var target = document.querySelector(this.getAttribute('href'));
       if (target) {
+        if (this.classList.contains('dlimonene-link')) {
+          target.classList.add('open');
+        }
         var offset = 80;
         var targetPosition = target.offsetTop - offset;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
@@ -627,7 +637,7 @@ document.addEventListener('DOMContentLoaded', function() {
            <p class="section-label">About Our Cleaner</p>
            <h2 class="section-title">The Power of Orange & Vinegar</h2>
            <hr class="divider" />
-           <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in <a href="#" class="dlimonene-link" onclick="var ti=document.getElementById('techDetails');ti.classList.toggle('open');return false;">D-limonene</a>, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps dissolve mineral deposits.</p>
+           <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in <a href="#techDetails" class="dlimonene-link">D-limonene</a>, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps dissolve mineral deposits.</p>
            <p>This powerful combination creates an effective, non-toxic cleaner that sanitizes surfaces, breaks down stubborn residues, and leaves a fresh citrus scent. Safe for use on countertops, appliances, floors, and more — no harsh chemicals, no fumes, just pure cleaning power.</p>
 <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable containers to minimize waste.</p>
             <a href="#ingredients" class="btn btn-primary" style="margin-top:1rem;">See What's Inside</a>
