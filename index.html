@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Witbay Naturals - naturally the best. Natural cleaning products made with orange peels and vinegar. Eco-friendly, non-toxic, safe for homes." />
+  <meta name="theme-color" content="#7a9e7e" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Witbay Naturals" />
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.youtube.com https://www.google.com; connect-src 'self'; child-src 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  
+  <meta property="og:title" content="Witbay Naturals · naturally the best" />
+  <meta property="og:description" content="Natural cleaning products made with orange peels and vinegar. Eco-friendly, non-toxic, safe for homes and the environment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://witbaynaturals.com" />
+  <meta property="og:image" content="https://witbaynaturals.com/og-image.webp" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://www.youtube.com" />
+  <link rel="preconnect" href="https://www.google.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="dns-prefetch" href="https://www.google.com/maps" />
+  <link rel="prefetch" href="privacy-policy.html" />
+  <link rel="prefetch" href="terms-of-service.html" />
+  <link rel="prefetch" href="disclaimer.html" />
+   
+  <style>
+:root {
+  --cream: #f7f3ec;
+  --sage: #7a9e7e;
+  --sage-dark: #4f7253;
+  --terracotta: #c7714a;
+  --bark: #3b2f24;
+  --mist: #e8ede9;
+  --white: #ffffff;
+  --fs-hero: clamp(2.8rem, 6vw, 5rem);
+  --fs-h2: clamp(1.8rem, 3.5vw, 2.8rem);
+  --fs-h3: 1.15rem;
+  --fs-body: 1rem;
+  --radius: 18px;
+  --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-serif: Georgia, 'Times New Roman', Times, serif;
+}
+html[data-theme="dark"] {
+  --cream: #1a1a1a;
+  --sage: #5a7e5e;
+  --sage-dark: #7a9e7e;
+  --bark: #e8e4de;
+  --mist: #2a2a2a;
+  --white: #1f1f1f;
+}
+html[data-theme="dark"] nav { background: rgba(26, 26, 26, 0.95); border-bottom-color: rgba(122, 126, 126, 0.3); }
+html[data-theme="dark"] .nav-logo-text { color: var(--sage-dark); }
+html[data-theme="dark"] .nav-links a { color: var(--bark); }
+html[data-theme="dark"] .nav-links a:hover { color: var(--sage-dark); }
+html[data-theme="dark"] .page-nav { background: rgba(26, 26, 26, 0.9); }
+html[data-theme="dark"] .page-nav a { background: rgba(232, 228, 222, 0.3); }
+html[data-theme="dark"] .page-nav a.active { background: var(--sage-dark); }
+html[data-theme="dark"] .page-nav a:hover { background: var(--sage); }
+html[data-theme="dark"] footer { background: var(--mist); color: rgba(232, 228, 222, 0.7); }
+html[data-theme="dark"] footer a { color: var(--sage); }
+html[data-theme="dark"] .settings-btn { background: var(--mist); }
+html[data-theme="dark"] .settings-popup { background: var(--mist); }
+html[data-theme="dark"] .settings-popup h4 { color: var(--bark); border-bottom-color: rgba(122, 158, 126, 0.3); }
+html[data-theme="dark"] .settings-option label { color: var(--bark); }
+html[data-theme="dark"] .hero-title em { color: var(--sage); }
+html[data-theme="dark"] .section-subtitle { color: var(--sage-dark); }
+html[data-theme="dark"] .section-label { color: var(--terracotta); }
+html[data-theme="dark"] .hero-eyebrow { color: var(--terracotta); border-color: var(--terracotta); }
+html[data-theme="dark"] .mobile-menu { background: rgba(26, 26, 26, 0.98); }
+html[data-theme="dark"] .mobile-menu a { color: var(--bark); }
+html[data-theme="dark"] .nav-logo-icon circle { fill: var(--sage-dark); }
+html[data-theme="dark"] .nav-logo-icon path { fill: var(--bark); }
+html[data-theme="dark"] .nav-logo-icon line, html[data-theme="dark"] .nav-logo-icon path[stroke] { stroke: var(--bark); }
+html[data-theme="dark"] .nav-toggle svg { stroke: var(--bark); }
+html[data-theme="dark"] .settings-btn svg { stroke: var(--bark); }
+html[data-theme="dark"] .hero-logo svg circle:first-child { fill: var(--sage-dark); }
+html[data-theme="dark"] .hero-logo svg circle:nth-child(2) { stroke: var(--bark); }
+html[data-theme="dark"] .hero-logo svg path:not([stroke]) { fill: var(--bark); }
+html[data-theme="dark"] .hero-logo svg path[stroke] { stroke: var(--bark); }
+html[data-theme="dark"] .hero-logo svg line { stroke: var(--bark); }
+html[data-theme="dark"] .hero-logo svg circle:last-child { fill: var(--bark); }
+html[data-theme="dark"] .toggle-slider { background: #555; }
+html[data-theme="dark"] .toggle-slider::before { background: #ccc; }
+html[data-theme="dark"] .toggle-switch input:checked + .toggle-slider { background: var(--sage-dark); }
+html[data-theme="dark"] .toggle-switch input:checked + .toggle-slider::before { background: #fff; }
+html[data-theme="dark"] #how-to-use { background: #1a1a1a; }
+html[data-theme="dark"] #how-to-use .section-title { color: #e8e4de; }
+html[data-theme="dark"] #how-to-use .section-label { color: var(--terracotta); }
+html[data-theme="dark"] #how-to-use .step-card { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); }
+html[data-theme="dark"] #how-to-use .step-card:hover { background: rgba(255,255,255,0.1); }
+html[data-theme="dark"] #how-to-use .step-num { color: var(--sage); }
+html[data-theme="dark"] #how-to-use h4 { color: #e8e4de; }
+html[data-theme="dark"] #how-to-use p { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .faq-question { color: var(--bark); }
+html[data-theme="dark"] .faq-answer-inner { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .hero-sub { color: rgba(232,228,222,0.8); }
+html[data-theme="dark"] .about-text p { color: rgba(232,228,222,0.8); }
+html[data-theme="dark"] .about-us-content p { color: rgba(232,228,222,0.8); }
+html[data-theme="dark"] .comparison-caption p { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .store-info p { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .ingredient-card p { color: rgba(232,228,222,0.7); }
+html[data-theme="dark"] .contact-item { color: var(--bark); }
+html[data-theme="dark"] #contact > p { color: rgba(232,228,222,0.7); }
+html[data-fonts="custom"] {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+}
+html[data-fonts="custom"] body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+html[data-fonts="custom"] .nav-logo-text, html[data-fonts="custom"] .hero-title, html[data-fonts="custom"] .section-title, html[data-fonts="custom"] .product-card h3, html[data-fonts="custom"] .ingredient-card h4, html[data-fonts="custom"] .step-num, html[data-fonts="custom"] .safety-item h4, html[data-fonts="custom"] .about-us-content h2, html[data-fonts="custom"] .stat-number, html[data-fonts="custom"] .about-image-overlay h4, html[data-fonts="custom"] .comparison-caption h4, html[data-fonts="custom"] .map-info h3, html[data-fonts="custom"] .store-info h4, html[data-fonts="custom"] .font-toggle-icon { font-family: 'Cormorant Garamond', Georgia, serif; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+body { background: var(--cream); color: var(--bark); font-family: var(--font-sans); font-size: var(--fs-body); line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; text-rendering: optimizeSpeed; }
+img, svg { max-width: 100%; height: auto; display: block; }
+img { content-visibility: auto; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: max(1rem, env(safe-area-inset-top)) 5%; background: rgba(247, 243, 236, 0.92); backdrop-filter: blur(14px) saturate(180%); -webkit-backdrop-filter: blur(14px) saturate(180%); border-bottom: 1px solid rgba(122, 158, 126, 0.2); }
+.nav-logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.nav-logo-icon { width: 36px; height: 36px; }
+.nav-logo-text { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--sage-dark); letter-spacing: 0.02em; }
+.nav-logo-text span { color: var(--terracotta); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a { text-decoration: none; color: var(--bark); font-size: 0.88rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color var(--transition); padding: 0.5rem 0; }
+.nav-links a:hover { color: var(--sage-dark); }
+.nav-links .nav-cta { background: var(--sage-dark); color: var(--white) !important; padding: 0.5rem 1rem !important; border-radius: 100px; }
+.nav-links .nav-cta:hover { background: var(--bark) !important; transform: translateY(-2px); }
+.nav-toggle { display: none; background: none; border: none; padding: 0.5rem; cursor: pointer; }
+.nav-toggle svg { width: 24px; height: 24px; }
+.mobile-menu { display: none; position: fixed; inset: 0; background: rgba(247, 243, 236, 0.97); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; }
+.mobile-menu.active { opacity: 1; visibility: visible; }
+.mobile-menu a { text-decoration: none; color: var(--bark); font-size: 1.2rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 1rem; }
+.mobile-cta { background: var(--sage-dark) !important; color: var(--white) !important; border-radius: 100px; margin-top: 1rem; padding: 0.8rem 2rem !important; }
+.mobile-menu-close { position: absolute; top: 1.2rem; right: 5%; background: none; border: none; font-size: 2rem; cursor: pointer; padding: 0.5rem; line-height: 1; }
+#hero { min-height: 100svh; min-height: 100dvh; display: grid; place-items: center; text-align: center; padding: max(5rem, env(safe-area-inset-top)) 5% max(3rem, env(safe-area-inset-bottom)); position: relative; overflow: hidden; }
+#hero::before { content: ''; position: absolute; inset: -20%; background-image: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(122,158,126,0.12) 0%, transparent 65%), radial-gradient(ellipse 60% 50% at 20% 80%, rgba(199,113,74,0.08) 0%, transparent 55%); pointer-events: none; }
+.hero-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); border: 1px solid var(--terracotta); padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease both; }
+.section-subtitle { font-size: 1rem; font-weight: 500; color: var(--sage-dark); margin-bottom: 1.5rem; display: block; }
+.hero-title-text { white-space: nowrap; }
+.hero-title { font-family: var(--font-serif); font-size: var(--fs-hero); font-weight: 300; line-height: 1.12; color: var(--bark); max-width: 780px; margin: 0 auto 1.4rem; animation: fadeUp 0.8s 0.15s ease both; }
+.hero-title em { font-style: italic; color: var(--sage-dark); }
+.hero-sub { font-size: 1.05rem; max-width: 480px; margin: 0 auto 2.5rem; color: #5a4e44; animation: fadeUp 0.8s 0.28s ease both; }
+.btn-group { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; animation: fadeUp 0.8s 0.4s ease both; }
+.btn { display: inline-block; padding: 0.9rem 2rem; min-height: 48px; border-radius: 100px; font-size: 0.9rem; font-weight: 500; text-decoration: none; letter-spacing: 0.03em; transition: transform var(--transition), box-shadow var(--transition), background var(--transition); cursor: pointer; border: none; }
+.btn-primary { background: var(--sage-dark); color: var(--white); box-shadow: 0 4px 18px rgba(79,114,83,0.28); }
+.btn-primary:hover { background: var(--bark); transform: translateY(-2px); box-shadow: 0 8px 26px rgba(79,114,83,0.35); }
+.btn-ghost { background: transparent; color: var(--bark); border: 1.5px solid var(--bark); }
+.btn-ghost:hover { background: var(--bark); color: var(--cream); transform: translateY(-2px); }
+.leaf-deco { position: absolute; opacity: 0.18; pointer-events: none; }
+.leaf-deco.top-right { top: 8%; right: 4%; width: 180px; transform: rotate(25deg); animation: sway 8s ease-in-out infinite; }
+.leaf-deco.bottom-left { bottom: 10%; left: 3%; width: 140px; transform: rotate(-15deg); animation: sway 10s ease-in-out infinite reverse; }
+.hero-logo { width: 100px; height: 100px; margin: 0 auto 1.5rem; animation: fadeUp 0.8s ease both; }
+.hero-logo svg { width: 100%; height: 100%; filter: drop-shadow(0 4px 12px rgba(79,114,83,0.2)); }
+@media (max-width: 768px) { .hero-logo { width: 80px; height: 80px; } }
+@keyframes sway { 0%, 100% { transform: rotate(25deg) translate3d(0, 0, 0); } 50% { transform: rotate(25deg) translate3d(0, -10px, 0); } }
+section { padding: 6rem 5%; content-visibility: auto; contain-intrinsic-size: auto 600px; }
+section:last-of-type { contain-intrinsic-size: auto 400px; }
+.section-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.75rem; }
+.section-title { font-family: var(--font-serif); font-size: var(--fs-h2); font-weight: 400; line-height: 1.18; color: var(--bark); max-width: 560px; }
+.divider { width: 48px; height: 2px; background: var(--sage); margin: 1.5rem 0 2rem; border: none; }
+#about { background: var(--mist); border-radius: var(--radius); margin: 0 2%; }
+.about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+.about-text p { color: #4a3f35; margin-bottom: 1.1rem; max-width: 500px; }
+.product-card { background: var(--white); border-radius: 24px; padding: 3rem 2rem; text-align: center; box-shadow: 0 12px 48px rgba(59,47,36,0.09); position: relative; overflow: hidden; }
+.product-card::before { content: ''; position: absolute; top: -40px; right: -40px; width: 160px; height: 160px; background: radial-gradient(circle, rgba(122,158,126,0.15), transparent 70%); pointer-events: none; }
+.bottle-icon { font-size: 5rem; display: block; margin-bottom: 1rem; }
+.product-card h3 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 600; color: var(--sage-dark); margin-bottom: 0.4rem; }
+.product-card p { font-size: 0.88rem; color: #7a6a5e; }
+.badge-row { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.4rem; flex-wrap: wrap; }
+.badge { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 100px; background: var(--mist); color: var(--sage-dark); border: 1px solid rgba(122,158,126,0.35); }
+#ingredients { max-width: 1100px; margin: 0 auto; }
+.ingredients-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+.ingredients-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; }
+.ingredient-card { background: var(--white); border-radius: 16px; padding: 1.6rem 1.4rem; border: 1px solid rgba(122,158,126,0.2); transition: transform var(--transition), box-shadow var(--transition); }
+.ingredient-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(59,47,36,0.09); }
+.ingredient-icon { font-size: 2rem; margin-bottom: 0.8rem; display: block; }
+.ingredient-card h4 { font-family: var(--font-serif); font-size: 1.15rem; font-weight: 600; color: var(--bark); margin-bottom: 0.35rem; }
+.ingredient-card p { font-size: 0.84rem; color: #7a6a5e; line-height: 1.55; }
+#how-to-use { background: var(--bark); color: var(--cream); border-radius: var(--radius); margin: 0 2%; }
+#how-to-use .section-title { color: var(--cream); }
+#how-to-use .section-label { color: var(--terracotta); }
+.steps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.step-card { background: rgba(247, 243, 236, 0.07); border: 1px solid rgba(247,243,236,0.12); border-radius: 16px; padding: 2rem 1.6rem; transition: background var(--transition); }
+.step-card:hover { background: rgba(247, 243, 236, 0.12); }
+.step-num { font-family: var(--font-serif); font-size: 2.8rem; font-weight: 300; color: var(--sage); line-height: 1; margin-bottom: 0.8rem; }
+.step-card h4 { font-size: var(--fs-h3); font-weight: 500; color: var(--cream); margin-bottom: 0.5rem; }
+.step-card p { font-size: 0.88rem; color: rgba(247,243,236,0.65); line-height: 1.6; }
+#safety { padding: 4rem 5%; background: var(--sage); }
+.safety-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center; }
+.safety-item h4 { font-family: var(--font-serif); font-size: 1.3rem; color: var(--white); margin-bottom: 0.4rem; }
+.safety-item p { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
+.safety-icon { font-size: 2rem; margin-bottom: 0.6rem; }
+#contact { text-align: center; max-width: 640px; margin: 0 auto; }
+#contact .section-title { margin: 0 auto 0.5rem; }
+#contact > p { color: #5a4e44; margin-bottom: 2.5rem; }
+.contact-details { display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.contact-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; color: var(--bark); }
+.contact-item .ci-icon { width: 36px; height: 36px; border-radius: 50%; background: var(--mist); display: grid; place-items: center; }
+.contact-form { display: grid; gap: 1rem; text-align: left; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 0.85rem 1.1rem; border: 1.5px solid rgba(122,158,126,0.3); border-radius: 12px; font-family: inherit; font-size: 16px; background: var(--white); color: var(--bark); outline: none; transition: border-color var(--transition); -webkit-appearance: none; appearance: none; }
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--sage-dark); }
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.form-status { padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.9rem; display: none; margin-bottom: 0.5rem; }
+.form-status.success { display: block; background: rgba(122, 158, 126, 0.15); color: var(--sage-dark); border: 1px solid var(--sage); }
+.form-status.error { display: block; background: rgba(199, 113, 74, 0.15); color: var(--terracotta); border: 1px solid var(--terracotta); }
+.form-status.sending { display: block; background: rgba(122, 158, 126, 0.1); color: var(--bark); }
+footer { background: var(--bark); color: rgba(247,243,236,0.55); text-align: center; padding: 2.5rem 5%; font-size: 0.82rem; }
+footer a { color: var(--sage); text-decoration: none; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 768px) { .nav-toggle { display: block; } .nav-links { display: none; } .mobile-menu { display: flex; } .about-inner { grid-template-columns: 1fr; gap: 2.5rem; } .safety-inner { grid-template-columns: 1fr; text-align: center; } .form-row { grid-template-columns: 1fr; } #about, #how-to-use { margin: 0; border-radius: 0; } section { padding: 4rem 5%; } .leaf-deco { display: none; } .hero-title { font-size: clamp(2rem, 8vw, 3.5rem); } .ingredients-header { flex-direction: column; align-items: flex-start; } .contact-details { flex-direction: column; align-items: center; gap: 1rem; } .btn-group { gap: 0.5rem; } .btn { width: 100%; max-width: 280px; text-align: center; } }
+@media (max-width: 480px) { .hero-eyebrow { font-size: 0.7rem; padding: 0.3rem 0.8rem; } .ingredient-card, .step-card { padding: 1.2rem 1rem; } }
+@media (hover: none) and (pointer: coarse) { .btn:hover { transform: none; } .ingredient-card:hover { transform: none; box-shadow: none; } .step-card:hover { background: rgba(247, 243, 236, 0.07); } }
+@media (min-width: 769px) { .mobile-menu { display: none !important; } .mobile-menu-close { display: none; } }
+.scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--sage-dark), var(--sage)); z-index: 101; width: 0%; transition: width 0.08s linear; }
+.scroll-progress::after { content: ''; position: absolute; right: -6px; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: var(--sage); border-radius: 50%; box-shadow: 0 0 6px rgba(122, 158, 126, 0.6); }
+.page-nav { position: fixed; right: 0.75rem; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 0.6rem; z-index: 90; padding: 0.5rem; background: rgba(247, 243, 236, 0.85); backdrop-filter: blur(8px); border-radius: 20px; box-shadow: 0 2px 12px rgba(59, 47, 36, 0.08); }
+.page-nav a { width: 6px; height: 6px; border-radius: 50%; background: rgba(59, 47, 36, 0.3); transition: all 0.3s ease; display: block; }
+.page-nav a.active { background: var(--sage-dark); transform: scale(1.5); }
+.page-nav a:hover { background: var(--sage); transform: scale(1.3); }
+@media (max-width: 1024px) { .page-nav { display: none; } }
+#about-us { background: var(--white); border-radius: var(--radius); margin: 0 2%; }
+.about-us-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1100px; margin: 0 auto; align-items: center; }
+.about-us-content h2 { font-family: var(--font-serif); font-size: var(--fs-h2); font-weight: 400; margin-bottom: 1.5rem; }
+.about-us-content p { color: #4a3f35; margin-bottom: 1rem; }
+.about-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+.stat-item { text-align: center; padding: 1rem; background: var(--mist); border-radius: 12px; }
+.stat-number { font-family: var(--font-serif); font-size: 2.5rem; font-weight: 600; color: var(--sage-dark); display: block; }
+.stat-label { font-size: 0.8rem; color: #7a6a5e; text-transform: uppercase; letter-spacing: 0.05em; }
+.about-image { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; background: var(--mist); }
+.about-image img { width: 100%; height: 100%; object-fit: cover; }
+.about-image-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: 1.5rem; background: linear-gradient(transparent, rgba(59,47,36,0.8)); color: var(--white); }
+.about-image-overlay h4 { font-family: var(--font-serif); font-size: 1.2rem; margin-bottom: 0.25rem; }
+.about-image-overlay p { font-size: 0.85rem; opacity: 0.9; }
+.video-section { max-width: 1100px; margin: 0 auto; }
+.video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius); background: var(--mist); margin-top: 2rem; cursor: pointer; max-width: 640px; margin-left: auto; margin-right: auto; }
+.video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+.video-thumbnail { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.video-play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 72px; height: 72px; background: var(--white); border-radius: 50%; display: grid; place-items: center; box-shadow: 0 4px 20px rgba(59,47,36,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.video-container:hover .video-play-btn { transform: translate(-50%, -50%) scale(1.1); box-shadow: 0 8px 30px rgba(59,47,36,0.3); }
+.video-play-btn svg { width: 28px; height: 28px; margin-left: 4px; fill: var(--sage-dark); }
+.video-overlay-text { position: absolute; bottom: 1.5rem; left: 1.5rem; right: 1.5rem; color: var(--bark); font-weight: 500; }
+.video-container.hidden .video-thumbnail, .video-container.hidden .video-play-btn, .video-container.hidden .video-overlay-text { display: none; }
+.comparison-section { max-width: 1100px; margin: 0 auto; }
+.comparison-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+.comparison-card { background: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 32px rgba(59,47,36,0.08); }
+.comparison-card.before { border: 3px solid #d4a574; }
+.comparison-card.after { border: 3px solid var(--sage); }
+.comparison-label { padding: 0.75rem 1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; }
+.comparison-card.before .comparison-label { background: #d4a574; color: var(--white); }
+.comparison-card.after .comparison-label { background: var(--sage); color: var(--white); }
+.comparison-card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+.comparison-caption { padding: 1rem; text-align: center; }
+.comparison-caption h4 { font-family: var(--font-serif); font-size: 1.1rem; margin-bottom: 0.25rem; }
+.comparison-caption p { font-size: 0.85rem; color: #7a6a5e; }
+.before-after-slider { position: relative; max-width: 800px; margin: 2rem auto; overflow: hidden; border-radius: var(--radius); box-shadow: 0 12px 48px rgba(59,47,36,0.12); }
+.slider-container { position: relative; width: 100%; aspect-ratio: 16/9; }
+.slider-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.slider-image.after-image { clip-path: inset(0 50% 0 0); }
+.slider-handle { position: absolute; top: 0; left: 50%; width: 4px; height: 100%; background: var(--white); cursor: ew-resize; z-index: 10; }
+.slider-handle::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; background: var(--white); border-radius: 50%; box-shadow: 0 2px 12px rgba(0,0,0,0.2); }
+.slider-handle::after { content: '\2194'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 1.2rem; color: var(--sage-dark); z-index: 11; }
+.slider-labels { position: absolute; bottom: 1rem; left: 1rem; right: 1rem; display: flex; justify-content: space-between; pointer-events: none; z-index: 5; }
+.slider-label { background: rgba(59,47,36,0.75); color: var(--white); padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.8rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+#faq { background: var(--mist); border-radius: var(--radius); margin: 0 2%; }
+.faq-container { max-width: 800px; margin: 2rem auto 0; }
+.faq-item { background: var(--white); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden; box-shadow: 0 2px 8px rgba(59,47,36,0.05); }
+.faq-question { width: 100%; padding: 1.25rem 1.5rem; background: none; border: none; text-align: left; font-family: var(--font-sans); font-size: 1rem; font-weight: 500; color: var(--bark); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; transition: background var(--transition); }
+.faq-question:hover { background: var(--mist); }
+.faq-question::after { content: '+'; font-size: 1.5rem; color: var(--sage-dark); transition: transform var(--transition); flex-shrink: 0; }
+.faq-item.active .faq-question::after { transform: rotate(45deg); }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+.faq-item.active .faq-answer { max-height: 500px; }
+.faq-answer-inner { padding: 0 1.5rem 1.25rem; color: #5a4e44; line-height: 1.7; }
+.where-to-buy { padding: 4rem 5%; background: var(--white); }
+.where-to-buy-inner { max-width: 1100px; margin: 0 auto; }
+.stores-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.store-card { background: var(--mist); border-radius: 16px; padding: 1.5rem; display: flex; gap: 1rem; transition: transform var(--transition), box-shadow var(--transition); }
+.store-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(59,47,36,0.1); }
+.store-icon { width: 48px; height: 48px; background: var(--sage); border-radius: 12px; display: grid; place-items: center; font-size: 1.5rem; flex-shrink: 0; }
+.store-info h4 { font-family: var(--font-serif); font-size: 1.15rem; color: var(--bark); margin-bottom: 0.25rem; }
+.store-info p { font-size: 0.85rem; color: #7a6a5e; line-height: 1.5; }
+.online-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--sage-dark); color: var(--white); padding: 0.6rem 1.2rem; border-radius: 100px; font-size: 0.9rem; font-weight: 500; margin-top: 2rem; }
+.online-badge svg { width: 18px; height: 18px; fill: currentColor; }
+@media (max-width: 768px) { .about-us-grid { grid-template-columns: 1fr; gap: 2rem; } .about-stats { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; } .comparison-wrapper { grid-template-columns: 1fr; } .map-container { grid-template-columns: 1fr; } .map-embed { order: -1; } .stat-number { font-size: 1.8rem; } }
+@media (max-width: 480px) { .about-stats { grid-template-columns: 1fr; } .stat-item { display: flex; align-items: center; gap: 1rem; text-align: left; } .stat-number { font-size: 2rem; } }
+.lazy-image { opacity: 0; transition: opacity 0.5s ease; }
+.lazy-image.loaded { opacity: 1; }
+.settings-btn { position: fixed; bottom: 1.5rem; right: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: var(--white); border: none; cursor: pointer; display: grid; place-items: center; box-shadow: 0 4px 20px rgba(59,47,36,0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; z-index: 95; }
+.settings-btn:hover { transform: scale(1.08); box-shadow: 0 6px 24px rgba(59,47,36,0.2); }
+.settings-btn svg { width: 20px; height: 20px; color: var(--bark); transition: transform 0.4s ease; }
+.settings-btn:hover svg { transform: rotate(45deg); }
+.settings-popup { position: fixed; bottom: 5.5rem; right: 1.5rem; background: var(--white); border-radius: 16px; padding: 1.25rem; box-shadow: 0 8px 40px rgba(59,47,36,0.18); z-index: 95; opacity: 0; visibility: hidden; transform: translateY(10px) scale(0.95); transform-origin: bottom right; transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease; min-width: 200px; }
+.settings-popup.open { opacity: 1; visibility: visible; transform: translateY(0) scale(1); }
+.settings-popup h4 { font-family: var(--font-serif); font-size: 0.95rem; font-weight: 600; color: var(--bark); margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--mist); }
+.settings-option { display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0; }
+.settings-option label { font-size: 0.85rem; color: #5a4e44; }
+.toggle-switch { position: relative; width: 44px; height: 24px; }
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+.toggle-slider { position: absolute; cursor: pointer; inset: 0; background: #d0d0d0; border-radius: 24px; transition: background 0.3s ease; }
+.toggle-slider::before { content: ''; position: absolute; width: 18px; height: 18px; left: 3px; bottom: 3px; background: var(--white); border-radius: 50%; transition: transform 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+.toggle-switch input:checked + .toggle-slider { background: var(--sage-dark); }
+.toggle-switch input:checked + .toggle-slider::before { transform: translateX(20px); }
+.toggle-switch { position: relative; width: 44px; height: 24px; display: inline-block; }
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+  </style>
+  
+  <title>Witbay Naturals · naturally the best</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='20' fill='%237a9e7e'/%3E%3Ccircle cx='60' cy='60' r='35' fill='none' stroke='%23fff' stroke-width='4'/%3E%3Cpath d='M60 30 C45 45 40 55 45 70 C50 85 70 85 75 70 C80 55 75 45 60 30Z' fill='%23fff' opacity='0.9'/%3E%3Cline x1='60' y1='40' x2='60' y2='75' stroke='%237a9e7e' stroke-width='2'/%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='20' fill='%237a9e7e'/%3E%3Ccircle cx='60' cy='60' r='35' fill='none' stroke='%23fff' stroke-width='4'/%3E%3Cpath d='M60 30 C45 45 40 55 45 70 C50 85 70 85 75 70 C80 55 75 45 60 30Z' fill='%23fff' opacity='0.9'/%3E%3C/svg%3E" />
+
+  </head>
+<body>
+
+  <nav>
+    <a href="#" class="nav-logo" aria-label="Witbay Naturals Home">
+      <svg class="nav-logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="30" cy="30" r="28" fill="#7a9e7e"/>
+        <path d="M30 12 C18 24 15 32 18 42 C21 52 39 52 42 42 C45 32 42 24 30 12Z" fill="#fff" opacity="0.95"/>
+        <line x1="30" y1="18" x2="30" y2="44" stroke="#7a9e7e" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M24 32 Q30 38 36 32" stroke="#7a9e7e" stroke-width="2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="nav-logo-text">Witbay<span>Naturals</span></span>
+    </a>
+     <ul class="nav-links">
+      <li><a href="#about">Product</a></li>
+      <li><a href="#about-us">About</a></li>
+      <li><a href="#ingredients">Ingredients</a></li>
+      <li><a href="#how-to-use">How to Use</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#where-to-buy" class="nav-cta">Buy Now</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('mobileMenu').classList.add('active')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu" onclick="document.getElementById('mobileMenu').classList.remove('active')">&times;</button>
+    <a href="#about-us" onclick="document.getElementById('mobileMenu').classList.remove('active')">About</a>
+    <a href="#about" onclick="document.getElementById('mobileMenu').classList.remove('active')">Product</a>
+    <a href="#ingredients" onclick="document.getElementById('mobileMenu').classList.remove('active')">Ingredients</a>
+    <a href="#video-tutorial" onclick="document.getElementById('mobileMenu').classList.remove('active')">Demo</a>
+    <a href="#results" onclick="document.getElementById('mobileMenu').classList.remove('active')">Results</a>
+    <a href="#how-to-use" onclick="document.getElementById('mobileMenu').classList.remove('active')">How to Use</a>
+    <a href="#faq" onclick="document.getElementById('mobileMenu').classList.remove('active')">FAQ</a>
+    <a href="#contact" onclick="document.getElementById('mobileMenu').classList.remove('active')">Contact</a>
+    <a href="#where-to-buy" class="mobile-cta" onclick="document.getElementById('mobileMenu').classList.remove('active')">Buy Now</a>
+  </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <nav class="page-nav" aria-label="Page sections">
+    <a href="#hero" title="Home" class="active"></a>
+    <a href="#about-us" title="About"></a>
+    <a href="#about" title="Product"></a>
+    <a href="#ingredients" title="Ingredients"></a>
+    <a href="#video-tutorial" title="Demo"></a>
+    <a href="#results" title="Results"></a>
+    <a href="#how-to-use" title="How to Use"></a>
+    <a href="#faq" title="FAQ"></a>
+    <a href="#contact" title="Contact"></a>
+  </nav>
+
+  <button class="settings-btn" id="settingsBtn" aria-label="Settings">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="3"></circle>
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+    </svg>
+  </button>
+
+  <div class="settings-popup" id="settingsPopup">
+    <h4>Settings</h4>
+    <div class="settings-option">
+      <span class="settings-label">Dark Mode</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="darkToggle" />
+        <span class="toggle-slider"></span>
+      </label>
+    </div>
+  </div>
+
+  <script>
+window.loadVideo = function() {
+  var wrapper = document.getElementById('videoWrapper');
+  if (wrapper.classList.contains('loaded')) return;
+  wrapper.classList.add('loaded', 'hidden');
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1';
+  iframe.title = 'witbaynaturals Product Demo';
+  iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+  iframe.allowFullscreen = true;
+  wrapper.appendChild(iframe);
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+  var progressBar = document.getElementById('scrollProgress');
+  var navLinks = document.querySelectorAll('.nav-links a');
+  var pageNavLinks = document.querySelectorAll('.page-nav a');
+  var sections = document.querySelectorAll('section[id]');
+  var settingsBtn = document.getElementById('settingsBtn');
+  var settingsPopup = document.getElementById('settingsPopup');
+  var fontToggle = document.getElementById('fontToggle');
+  var htmlEl = document.documentElement;
+
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var scrollPercent = (scrollTop / docHeight) * 100;
+    progressBar.style.width = scrollPercent + '%';
+
+    var current = '';
+    sections.forEach(function(section) {
+      var sectionTop = section.offsetTop - 150;
+      if (scrollTop >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(function(link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+
+    pageNavLinks.forEach(function(link) {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  }, { passive: true });
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        var offset = 80;
+        var targetPosition = target.offsetTop - offset;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    });
+  });
+
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function(item) {
+    var question = item.querySelector('.faq-question');
+    question.addEventListener('click', function() {
+      var isActive = item.classList.contains('active');
+      faqItems.forEach(function(i) { i.classList.remove('active'); });
+      if (!isActive) { item.classList.add('active'); }
+    });
+  });
+
+  var lazyImages = document.querySelectorAll('.lazy-image');
+  if ('IntersectionObserver' in window) {
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('loaded');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '50px' });
+    lazyImages.forEach(function(img) { imageObserver.observe(img); });
+  } else {
+    lazyImages.forEach(function(img) { img.classList.add('loaded'); });
+  }
+
+  var slider = document.querySelector('.before-after-slider');
+  if (slider) {
+    var handle = slider.querySelector('.slider-handle');
+    var afterImage = slider.querySelector('.after-image');
+    var isDragging = false;
+
+    var updateSlider = function(x) {
+      var rect = slider.getBoundingClientRect();
+      var percent = ((x - rect.left) / rect.width) * 100;
+      percent = Math.max(0, Math.min(100, percent));
+      handle.style.left = percent + '%';
+      afterImage.style.clipPath = 'inset(0 ' + (100 - percent) + '% 0 0)';
+    };
+
+    handle.addEventListener('mousedown', function(e) { isDragging = true; e.preventDefault(); });
+    document.addEventListener('mousemove', function(e) { if (isDragging) updateSlider(e.clientX); });
+    document.addEventListener('mouseup', function() { isDragging = false; });
+    handle.addEventListener('touchstart', function(e) { isDragging = true; });
+    document.addEventListener('touchmove', function(e) { if (isDragging && e.touches.length === 1) updateSlider(e.touches[0].clientX); });
+    document.addEventListener('touchend', function() { isDragging = false; });
+    slider.addEventListener('click', function(e) { updateSlider(e.clientX); });
+  }
+
+  // Settings popup
+  if (settingsBtn && settingsPopup) {
+    settingsBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      settingsPopup.classList.toggle('open');
+    });
+    settingsPopup.addEventListener('click', function(e) { e.stopPropagation(); });
+    document.addEventListener('click', function(e) {
+      if (!settingsPopup.contains(e.target) && e.target !== settingsBtn) {
+        settingsPopup.classList.remove('open');
+      }
+    });
+  }
+
+  // Dark mode toggle
+  var darkToggle = document.getElementById('darkToggle');
+  var storedTheme = localStorage.getItem('witbaynaturals_theme');
+
+  function applyTheme(isDark) {
+    if (isDark) {
+      htmlEl.setAttribute('data-theme', 'dark');
+      darkToggle.checked = true;
+    } else {
+      htmlEl.removeAttribute('data-theme');
+      darkToggle.checked = false;
+    }
+    localStorage.setItem('witbaynaturals_theme', isDark ? 'dark' : 'light');
+  }
+
+  if (storedTheme === 'dark') {
+    applyTheme(true);
+  }
+
+  if (darkToggle) {
+    darkToggle.addEventListener('change', function(e) {
+      e.stopPropagation();
+      applyTheme(this.checked);
+    });
+  }
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').catch(function() {});
+    });
+  }
+});
+  </script>
+
+  <section id="hero">
+
+    <!-- NOTE: Botanical leaf SVGs — decorative only, feel free to remove -->
+    <svg class="leaf-deco top-right" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 280 C60 220 10 160 40 80 C70 0 160 20 180 100 C200 180 140 240 100 280Z" stroke="#4f7253" stroke-width="2" fill="rgba(122,158,126,0.15)"/>
+      <line x1="100" y1="280" x2="110" y2="80" stroke="#4f7253" stroke-width="1.5"/>
+      <line x1="110" y1="160" x2="155" y2="130" stroke="#4f7253" stroke-width="1"/>
+      <line x1="107" y1="200" x2="65" y2="170" stroke="#4f7253" stroke-width="1"/>
+    </svg>
+
+    <svg class="leaf-deco bottom-left" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M100 280 C60 220 10 160 40 80 C70 0 160 20 180 100 C200 180 140 240 100 280Z" stroke="#4f7253" stroke-width="2" fill="rgba(122,158,126,0.15)"/>
+      <line x1="100" y1="280" x2="110" y2="80" stroke="#4f7253" stroke-width="1.5"/>
+    </svg>
+
+    <div>
+      <div class="hero-logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" fill="#7a9e7e"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#fff" stroke-width="2" opacity="0.3"/>
+          <path d="M50 15 C30 35 25 50 30 68 C35 86 65 86 70 68 C75 50 70 35 50 15Z" fill="#fff" opacity="0.95"/>
+          <line x1="50" y1="25" x2="50" y2="72" stroke="#7a9e7e" stroke-width="3" stroke-linecap="round"/>
+          <path d="M38 52 Q50 62 62 52" stroke="#7a9e7e" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="50" cy="50" r="4" fill="#7a9e7e"/>
+         </svg>
+       </div>
+         <span class="hero-eyebrow">naturally the best</span>
+        <h1 class="hero-title">Pure ingredients,<br>clean homes</h1>
+        <p class="hero-sub">Witbay Naturals specializes in homemade natural cleaning products designed to provide safe, effective, and eco-friendly solutions for household cleaning.</p>
+       <div class="btn-group">
+         <a href="#ingredients" class="btn btn-primary">What's Inside</a>
+         <a href="#how-to-use" class="btn btn-ghost">How to Use</a>
+       </div>
+    </div>
+  </section>
+
+   <section id="about-us">
+     <div class="about-us-grid">
+       <div class="about-us-content">
+         <p class="section-label">Our Story</p>
+         <!-- <p class="section-subtitle"></p> -->
+         <p>Witbay Naturals is a locally owned company specializing in homemade natural cleaning products designed to provide safe, effective, and eco-friendly solutions for household cleaning. Founded with a commitment to sustainability and health, we cater to environmentally conscious consumers who seek alternatives to conventional chemical-laden cleaners. Our products are crafted using simple, natural ingredients sourced locally, ensuring a transparent and trustworthy approach to home care.</p>
+         <p>Our mission is to promote healthier living and environmental stewardship by offering natural, non-toxic cleaning products that effectively clean homes while supporting local communities and reducing ecological impact.</p>
+         <div class="about-stats">
+           <div class="stat-item">
+             <span class="stat-number">100%</span>
+             <span class="stat-label">Locally Made</span>
+           </div>
+           <div class="stat-item">
+             <span class="stat-number">100%</span>
+             <span class="stat-label">Natural Ingredients</span>
+           </div>
+           <div class="stat-item">
+             <span class="stat-number">0</span>
+             <span class="stat-label">Synthetic Chemicals</span>
+           </div>
+         </div>
+       </div>
+        <div class="about-image">
+            <img src="images/about.jpg" alt="Natural cleaning products" class="lazy-image" loading="lazy" decoding="async" width="600" height="450" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 450%27%3E%3Crect fill=%27%23e8ede9%27 width=%27600%27 height=%27450%27/%3E%3Ctext x=%27300%27 y=%27225%27 text-anchor=%27middle%27 fill=%27%237a9e7e%27 font-family=%27sans-serif%27 font-size=%2724%27%3EImage%3C/text%3E%3C/svg%3E'" />
+           <div class="about-image-overlay">
+            <h4>Sherry Butler</h4>
+            <p>Founder & Formulator, Witbay Naturals</p>
+          </div>
+        </div>
+     </div>
+   </section>
+
+  <!-- =====================================================
+       NOTE: ABOUT / PRODUCT INFO
+       Edit the paragraphs below with your product description.
+       ===================================================== -->
+   <section id="about">
+      <div class="about-inner">
+        <div class="about-text">
+          <p class="section-label">About Our Cleaner</p>
+          <h2 class="section-title">The Power of Orange & Vinegar</h2>
+          <hr class="divider" />
+          <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in <a href="https://www.healthline.com/nutrition/d-limonene" target="_blank" rel="noopener" style="color:var(--sage-dark);">D-limonene</a>, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps to dissolve mineral deposits.</p>
+          <p><strong>What is D-limonene?</strong> Found in citrus fruit peels (up to 97% of the essential oils), D-limonene is one of the most common terpenes in nature. Research suggests it may offer anti-inflammatory, antioxidant, and antimicrobial benefits. The FDA recognizes it as a safe food additive.</p>
+          <p>This powerful combination creates an effective, non-toxic cleaner that sanitizes surfaces, breaks down stubborn residues, and leaves a fresh citrus scent. Safe for use on countertops, appliances, floors, and more — no harsh chemicals, no fumes, just pure cleaning power.</p>
+          <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable glass containers to minimize waste.</p>
+          <a href="#ingredients" class="btn btn-primary" style="margin-top:1rem;">See What's Inside</a>
+        </div>
+
+       <!-- NOTE: Product display card — swap the emoji for a real product image if available:
+            <img src="your-bottle.png" alt="Witbay Naturals bottle" style="width:80%;margin-bottom:1rem" /> -->
+       <div class="product-card">
+         <span class="bottle-icon">🍊</span>
+         <h3>Witbay Naturals All-Purpose Cleaner</h3>
+         <p>Orange Peel & Vinegar Formula<br>Ready to use — no dilution needed</p>
+         <div class="badge-row">
+           <span class="badge">Natural</span>
+           <span class="badge">Non-Toxic</span>
+           <span class="badge">Eco-Friendly</span>
+           <span class="badge">Locally Made</span>
+           <span class="badge">Handcrafted</span>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- =====================================================
+       NOTE: INGREDIENTS
+       Add or remove .ingredient-card blocks as needed.
+       Keep descriptions concise (1–2 lines).
+       ===================================================== -->
+   <section id="ingredients">
+       <div class="ingredients-header">
+         <div>
+           <p class="section-label">What's Inside</p>
+           <h2 class="section-title">Simple, honest ingredients</h2>
+         </div>
+         <p style="max-width:300px;font-size:0.88rem;color:#7a6a5e;text-align:right;">We list every single ingredient — no hidden chemicals, no proprietary blends.</p>
+       </div>
+
+       <div class="ingredients-grid">
+
+         <!-- NOTE: Each card = one key ingredient. Icon · Name · Short description -->
+         <div class="ingredient-card">
+           <span class="ingredient-icon">🍊</span>
+           <h4>Orange Peels</h4>
+           <p>Rich in D-limonene, a powerful natural solvent that cuts through grease and grime. Possesses antimicrobial properties that help sanitize surfaces.</p>
+         </div>
+
+         <div class="ingredient-card">
+           <span class="ingredient-icon">🧴</span>
+           <h4>White Vinegar</h4>
+           <p>When infused with orange peels, releases natural oils to create an effective cleaner. Breaks down mineral deposits, soap scum, and provides antibacterial properties.</p>
+         </div>
+
+         <!-- <div class="ingredient-card"> -->
+           <!-- <span class="ingredient-icon">🌿</span> -->
+           <!-- <h4>Plant-Based Surfactant</h4> -->
+           <!-- <p>Derived from coconut oil, helps lift and remove dirt without stripping surfaces. Biodegradable and gentle on skin.</p> -->
+         <!-- </div> -->
+
+          <div class="ingredient-card">
+            <span class="ingredient-icon">🍃</span>
+            <h4>Natural Extracts</h4>
+           <p>Plant-based essential oils provide natural antimicrobial and antifungal properties while adding a fresh, clean scent.</p>
+          </div>
+
+         <div class="ingredient-card">
+           <span class="ingredient-icon">💧</span>
+           <h4>Purified Water</h4>
+           <p>Filtered pure water used as a safe, neutral carrier for all active ingredients.</p>
+         </div>
+
+         <div class="ingredient-card">
+           <span class="ingredient-icon">✨</span>
+           <h4>Essential Oils</h4>
+           <p>For scent boosting. Adds additional antimicrobial properties and pleasant aroma.</p>
+         </div>
+
+       </div>
+   </section>
+
+   <section id="video-tutorial">
+     <div class="video-section">
+       <p class="section-label">See It In Action</p>
+        <h2 class="section-title">Watch Witbay Naturals work</h2>
+        <p style="max-width:600px;color:#5a4e44;margin-top:1rem;">See how our orange & vinegar cleaner tackles tough kitchen grease, bathroom grime, and more — all without harsh chemicals.</p>
+         <div class="video-container" id="videoWrapper" onclick="loadVideo()">
+             <img class="video-thumbnail" src="images/video-thumb.jpg" alt="Witbay Naturals product demo" loading="lazy" decoding="async" width="800" height="450" />
+           <div class="video-play-btn">
+             <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+           </div>
+           <div class="video-overlay-text">Click to play</div>
+         </div>
+      </div>
+   </section>
+
+   <section id="results">
+     <div class="comparison-section">
+       <p class="section-label">Real Results</p>
+       <h2 class="section-title">Before & After</h2>
+       <p style="max-width:600px;color:#5a4e44;margin-top:1rem;">Drag the slider to see the difference Witbay Naturals makes on common household surfaces.</p>
+       
+        <div class="before-after-slider">
+          <div class="slider-container">
+             <img src="images/before-0.jpg" alt="Kitchen counter before cleaning" class="slider-image lazy-image" loading="lazy" decoding="async" width="800" height="450" />
+             <img src="images/after-0.jpg" alt="Kitchen counter after cleaning" class="slider-image after-image lazy-image" loading="lazy" decoding="async" width="800" height="450" />
+            <div class="slider-handle"></div>
+            <div class="slider-labels">
+              <span class="slider-label">Before</span>
+              <span class="slider-label">After</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-wrapper">
+          <div class="comparison-card before">
+            <div class="comparison-label">Before</div>
+            <img src="images/before-1.jpg" alt="Surface before cleaning" class="lazy-image" loading="lazy" />
+            <div class="comparison-caption">
+              <h4>Stubborn Stains</h4>
+              <p>Grease and grime buildup</p>
+           </div>
+         </div>
+          <div class="comparison-card after">
+            <div class="comparison-label">After</div>
+            <img src="images/after-1.jpg" alt="Surface after cleaning" class="lazy-image" loading="lazy" />
+            <div class="comparison-caption">
+              <h4>After Cleaning</h4>
+              <p>Sparkling clean with Witbay Naturals</p>
+           </div>
+         </div>
+       </div>
+     </div>
+   </section>
+
+  <!-- =====================================================
+       NOTE: HOW TO USE
+       Edit step titles and descriptions to match your product's
+       specific usage instructions.
+       ===================================================== -->
+   <section id="how-to-use">
+     <p class="section-label">Instructions</p>
+     <h2 class="section-title">How to use Witbay Naturals</h2>
+
+     <div class="steps-grid">
+
+       <div class="step-card">
+         <div class="step-num">01</div>
+         <h4>Shake well</h4>
+         <p>Always shake the bottle before use to ensure the natural oils are evenly distributed.</p>
+       </div>
+
+       <div class="step-card">
+         <div class="step-num">02</div>
+         <h4>Spray onto surface</h4>
+         <p>Spray directly onto the surface you wish to clean. For tough grime, let it sit for 30-60 seconds to allow the citrus oils to penetrate.</p>
+       </div>
+
+       <div class="step-card">
+         <div class="step-num">03</div>
+         <h4>Wipe clean</h4>
+         <p>Wipe clean with a clean cloth or sponge. For stubborn spots, use a scrub brush or non-scratch scouring pad.</p>
+       </div>
+
+       <div class="step-card">
+         <div class="step-num">04</div>
+         <h4>No rinse needed</h4>
+         <p>No rinsing required on most surfaces. Enjoy the fresh, clean citrus scent that naturally deodorizes as it cleans.</p>
+       </div>
+
+     </div>
+   </section>
+
+  <section id="faq">
+      <p class="section-label">Common Questions</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">Is Witbay Naturals safe to use around children and pets?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! Our natural formula contains no harsh chemicals, bleach, ammonia, or synthetic fragrances. It's made from simple, food-grade ingredients that are gentle yet effective. When used as directed, it's safe in homes with children and pets.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I use Witbay Naturals on natural stone surfaces like marble or granite?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! Unlike harsh chemical cleaners, our formula is pH-balanced and safe for natural stone. It's also excellent for stainless steel, chrome, glass, ceramic, tile, laminate, and most sealed surfaces.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long does a 200ml bottle last?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Each 200ml bottle is ready to use - no dilution needed. For average household use, one bottle typically lasts 1-2 months depending on frequency of use.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Does Witbay Naturals contain any harmful chemicals?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">No. Our formula is made from simple & natural ingredients - nothing synthetic, nothing harsh.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Is Witbay Naturals eco-friendly?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! Our formula is 100% biodegradable.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What surfaces should I NOT use Witbay Naturals on?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Avoid using on unsealed wood or natural stone that hasn't been sealed. Always test on a small inconspicuous area first when trying a new surface.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you offer bulk pricing for businesses or refill stations?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Not at this time but as the demand grows we will consider wholesale options.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="where-to-buy" class="where-to-buy">
+    <div class="where-to-buy-inner">
+      <p class="section-label">Find Witbay Naturals</p>
+      <h2 class="section-title">Where to Buy</h2>
+      <p style="color:#5a4e44;margin-top:0.75rem;max-width:600px;">Available at these local retailers. Ask a staff member if you can't find it on the shelf.</p>
+      
+      <div class="stores-grid">
+        <div class="store-card">
+          <div class="store-icon">🏪</div>
+          <div class="store-info">
+            <h4>Green Valley Market</h4>
+            <p>Main Street<br>Hometown, USA<br>Open 8am - 8pm daily</p>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-icon">🛒</div>
+          <div class="store-info">
+            <h4>Fresh Food Co-op</h4>
+            <p>Maple Avenue<br>Hometown, USA<br>Open 7am - 9pm daily</p>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-icon">🌿</div>
+          <div class="store-info">
+            <h4>Eco Friendly Goods</h4>
+            <p>Oak Street<br>Hometown, USA<br>Open 9am - 7pm daily</p>
+          </div>
+        </div>
+        
+        <div class="store-card">
+          <div class="store-icon">🌱</div>
+          <div class="store-info">
+            <h4>Farmers Market</h4>
+            <p>Town Square<br>Hometown, USA<br>Saturdays 8am - 1pm</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="online-badge">
+        <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        Online Store — Launching Soon!
+      </div>
+    </div>
+  </section>
+   
+
+  <!-- =====================================================
+       NOTE: CONTACT SECTION
+       Update email, phone, and address below.
+       The form action="#" should be replaced with your
+       backend endpoint or a service like Formspree / Netlify Forms.
+       ===================================================== -->
+   <section id="contact">
+      <p class="section-label">Get in Touch</p>
+      <h2 class="section-title">We'd love to hear from you</h2>
+      <hr class="divider" style="margin:1.5rem auto 2rem;" />
+      <p>Have questions? Reach out.</p>
+
+      <div class="contact-details">
+        <!-- NOTE: Replace with real contact info -->
+        <div class="contact-item">
+          <span class="ci-icon">✉️</span>
+          <span>witbaynaturals@gmail.com</span>
+        </div>
+        <!-- <div class="contact-item"> -->
+          <!-- <span class="ci-icon">📞</span> -->
+          <!-- <span>+44 20 1234 5678</span> -->
+        <!-- </div> -->
+        <div class="contact-item">
+          <span class="ci-icon">📍</span>
+          <span>Newfoundland, Witless Bay</span>
+        </div>
+      </div>
+
+      <div class="map-embed" style="max-width:800px;margin:2rem auto;border-radius:16px;overflow:hidden;aspect-ratio:16/9;">
+        <a href="https://maps.google.com/?q=Witless+Bay,+NL" target="_blank" rel="noopener" title="Open location in Google Maps">
+          <img 
+            src="images/map.png" 
+            alt="Map showing Witbay Naturals location"
+            loading="lazy"
+            width="800"
+            height="450"
+            style="width:100%;height:100%;object-fit:cover;"
+            onerror="this.style.display='none'"
+          />
+        </a>
+      </div>
+
+      <!-- Contact form with honeypot spam protection -->
+      <!-- <form class="contact-form" id="contactForm" action="#" method="POST" novalidate>
+        <input type="text" name="website" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <input type="hidden" name="_timestamp" id="formTimestamp" value="" />
+        <input type="hidden" name="_nonce" id="formNonce" value="" />
+        <div class="form-row">
+          <input type="text"  name="name"  placeholder="Your name"  required />
+          <input type="email" name="email" placeholder="Email address" required />
+        </div>
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" placeholder="Your message…" required></textarea>
+        <div class="form-status" id="formStatus"></div>
+        <button type="submit" class="btn btn-primary" style="justify-self:start;">Send Message</button>
+      </form> -->
+  </section>
+  
+  
+  <!-- =====================================================
+       NOTE: SAFETY HIGHLIGHTS
+       Three key trust/safety signals. Update text as needed.
+       ===================================================== -->
+   <section id="safety">
+     <div class="safety-inner">
+       <div class="safety-item">
+         <div class="safety-icon">🧒</div>
+         <h4>Safe Around Children</h4>
+         <p>Our natural formula contains no harsh chemicals, bleach, ammonia, or synthetic fragrances. Safe for use around children when used as directed.</p>
+       </div>
+       <div class="safety-item">
+         <div class="safety-icon">🐾</div>
+         <h4>Pet Friendly</h4>
+         <p>Non-toxic ingredients make our cleaner safe for homes with pets. No harmful residues left behind.</p>
+       </div>
+       <div class="safety-item">
+         <div class="safety-icon">🍊</div>
+         <h4>Natural Ingredients</h4>
+         <p>Made from orange peels, vinegar, and water - nothing artificial. Fully biodegradable and environmentally friendly.</p>
+       </div>
+     </div>
+   </section>
+
+ 
+
+  <!-- Visitor Counter (disabled) -->
+  <!--
+  <div class="visitor-counter" id="visitorCounter">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M12 14c-4 0-8 2-8 4v2h16v-2c0-2-4-4-8-4z"/>
+    </svg>
+    <span><span class="count" id="visitorCount">0</span> visitors</span>
+  </div>
+  -->
+
+   <!-- =====================================================
+       NOTE: FOOTER — update copyright year, brand name, and links
+       ===================================================== -->
+    <footer>
+       <p>© 2026 Witbay Naturals · Naturally the best · <a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-service.html">Terms of Service</a> · <a href="disclaimer.html">Disclaimer</a></p>
+    </footer>
+
+</body>
+</html>
