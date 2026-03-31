@@ -138,7 +138,7 @@ nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center
 .mobile-menu-close { position: absolute; top: 1.2rem; right: 5%; background: none; border: none; font-size: 2rem; cursor: pointer; padding: 0.5rem; line-height: 1; }
 #hero { min-height: 100svh; min-height: 100dvh; display: grid; place-items: center; text-align: center; padding: max(5rem, env(safe-area-inset-top)) 5% max(3rem, env(safe-area-inset-bottom)); position: relative; overflow: hidden; }
 #hero::before { content: ''; position: absolute; inset: -20%; background-image: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(122,158,126,0.12) 0%, transparent 65%), radial-gradient(ellipse 60% 50% at 20% 80%, rgba(199,113,74,0.08) 0%, transparent 55%); pointer-events: none; }
-.hero-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--terracotta); border: 1px solid var(--terracotta); padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease both; }
+.hero-eyebrow { display: inline-block; font-family: var(--font-serif); font-size: 1.1rem; font-weight: 400; font-style: italic; letter-spacing: 0.08em; color: var(--terracotta); border: 1px solid var(--terracotta); padding: 0.4rem 1.2rem; border-radius: 100px; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease both; }
 .section-subtitle { font-size: 1rem; font-weight: 500; color: var(--sage-dark); margin-bottom: 1.5rem; display: block; }
 .hero-title-text { white-space: nowrap; }
 .hero-title { font-family: var(--font-serif); font-size: var(--fs-hero); font-weight: 300; line-height: 1.12; color: var(--bark); max-width: 780px; margin: 0 auto 1.4rem; animation: fadeUp 0.8s 0.15s ease both; }
@@ -214,7 +214,7 @@ footer { background: var(--bark); color: rgba(247,243,236,0.55); text-align: cen
 footer a { color: var(--sage); text-decoration: none; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 768px) { .nav-toggle { display: block; } .nav-links { display: none; } .mobile-menu { display: flex; } .about-inner { grid-template-columns: 1fr; gap: 2.5rem; } .safety-inner { grid-template-columns: 1fr; text-align: center; } .form-row { grid-template-columns: 1fr; } #about, #how-to-use { margin: 0; border-radius: 0; } section { padding: 4rem 5%; } .leaf-deco { display: none; } .hero-title { font-size: clamp(2rem, 8vw, 3.5rem); } .ingredients-header { flex-direction: column; align-items: flex-start; } .contact-details { flex-direction: column; align-items: center; gap: 1rem; } .btn-group { gap: 0.5rem; } .btn { width: 100%; max-width: 280px; text-align: center; } }
-@media (max-width: 480px) { .hero-eyebrow { font-size: 0.7rem; padding: 0.3rem 0.8rem; } .ingredient-card, .step-card { padding: 1.2rem 1rem; } }
+@media (max-width: 480px) { .hero-eyebrow { font-size: 0.9rem; padding: 0.35rem 1rem; } .ingredient-card, .step-card { padding: 1.2rem 1rem; } }
 @media (hover: none) and (pointer: coarse) { .btn:hover { transform: none; } .ingredient-card:hover { transform: none; box-shadow: none; } .step-card:hover { background: rgba(247, 243, 236, 0.07); } }
 @media (min-width: 769px) { .mobile-menu { display: none !important; } .mobile-menu-close { display: none; } }
 .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--sage-dark), var(--sage)); z-index: 101; width: 0%; transition: width 0.08s linear; }
@@ -312,15 +312,15 @@ footer a { color: var(--sage); text-decoration: none; }
   
   <title>Witbay Naturals · naturally the best</title>
   
-  <link rel="icon" type="image/svg+xml" href="images/logo.jpg" />
-  <link rel="apple-touch-icon" href="images/logo.jpg" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="apple-touch-icon" href="images/logo.svg" />
 
   </head>
 <body>
 
   <nav>
     <a href="#" class="nav-logo" aria-label="Witbay Naturals Home">
-      <img class="nav-logo-icon" src="images/logo.jpg" alt="" />
+      <img class="nav-logo-icon" src="images/logo.svg" alt="" />
       <span class="nav-logo-text">Witbay<span>Naturals</span></span>
     </a>
      <ul class="nav-links">
@@ -563,7 +563,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <div>
       <div class="hero-logo">
-        <img src="images/logo.jpg" alt="Witbay Naturals botanical logo" />
+        <img src="images/logo.svg" alt="Witbay Naturals botanical logo" />
        </div>
          <span class="hero-eyebrow">naturally the best</span>
         <h1 class="hero-title">Pure ingredients,<br>clean homes</h1>
@@ -620,7 +620,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in <a href="https://www.healthline.com/nutrition/d-limonene" target="_blank" rel="noopener" style="color:var(--sage-dark);">D-limonene</a>, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps to dissolve mineral deposits.</p>
           <p><strong>What is D-limonene?</strong> Found in citrus fruit peels (up to 97% of the essential oils), D-limonene is one of the most common terpenes in nature. Research suggests it may offer anti-inflammatory, antioxidant, and antimicrobial benefits. The FDA recognizes it as a safe food additive.</p>
           <p>This powerful combination creates an effective, non-toxic cleaner that sanitizes surfaces, breaks down stubborn residues, and leaves a fresh citrus scent. Safe for use on countertops, appliances, floors, and more — no harsh chemicals, no fumes, just pure cleaning power.</p>
-          <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable glass containers to minimize waste.</p>
+          <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable containers to minimize waste.</p>
           <a href="#ingredients" class="btn btn-primary" style="margin-top:1rem;">See What's Inside</a>
         </div>
 
@@ -804,14 +804,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="faq-item">
           <button class="faq-question">Can I use Witbay Naturals on natural stone surfaces like marble or granite?</button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Yes! Unlike harsh chemical cleaners, our formula is pH-balanced and safe for natural stone. It's also excellent for stainless steel, chrome, glass, ceramic, tile, laminate, and most sealed surfaces.</div>
+            <div class="faq-answer-inner">This product is best suited for stainless steel, chrome, glass, ceramic, tile, laminate, and most sealed surfaces.</div>
           </div>
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">How long does a 200ml bottle last?</button>
+          <button class="faq-question">How long does a 100ml bottle last?</button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Each 200ml bottle is ready to use - no dilution needed. For average household use, one bottle typically lasts 1-2 months depending on frequency of use.</div>
+            <div class="faq-answer-inner">Each bottle is ready to use - no dilution needed. For average household use, one bottle typically lasts 1-2 month depending on frequency of use.</div>
           </div>
         </div>
 
@@ -917,7 +917,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- </div> -->
         <div class="contact-item">
           <span class="ci-icon">📍</span>
-          <span>Newfoundland, Witless Bay</span>
+          <span>Witless Bay, Newfoundland</span>
         </div>
       </div>
 
