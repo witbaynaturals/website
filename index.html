@@ -157,7 +157,7 @@ nav { position: sticky; top: 0; z-index: 100; display: flex; align-items: center
 .hero-logo img { width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(79,114,83,0.2)); }
 @media (max-width: 768px) { .hero-logo { width: 180px; } }
 @keyframes sway { 0%, 100% { transform: rotate(25deg) translate3d(0, 0, 0); } 50% { transform: rotate(25deg) translate3d(0, -10px, 0); } }
-section { padding: 6rem 5%; content-visibility: auto; contain-intrinsic-size: auto 600px; }
+section { padding: 6rem 5%; }
 section:last-of-type { contain-intrinsic-size: auto 400px; }
 .section-label { font-size: 0.75rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 0.75rem; }
 .section-title { font-family: var(--font-serif); font-size: var(--fs-h2); font-weight: 400; line-height: 1.18; color: var(--bark); max-width: 560px; }
@@ -172,6 +172,18 @@ section:last-of-type { contain-intrinsic-size: auto 400px; }
 .product-card p { font-size: 0.88rem; color: #7a6a5e; }
 .badge-row { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.4rem; flex-wrap: wrap; }
 .badge { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 100px; background: var(--mist); color: var(--sage-dark); border: 1px solid rgba(122,158,126,0.35); }
+.technical-info { max-width: 700px; margin: 3rem auto 0; padding: 1.5rem; background: rgba(255,255,255,0.6); border-radius: 12px; border: 1px solid rgba(122,158,126,0.2); }
+.technical-info h3 { font-family: var(--font-serif); font-size: 1.2rem; color: var(--sage-dark); margin-bottom: 1rem; }
+.technical-info p { font-size: 0.9rem; color: #5a4e44; margin-bottom: 0.75rem; line-height: 1.6; }
+.technical-info ol { margin: 0.5rem 0 0 1.5rem; font-size: 0.85rem; color: #7a6a5e; }
+.technical-info li { margin-bottom: 0.4rem; }
+.molecule-display { text-align: center; margin: 1.5rem 0; padding: 1rem; background: var(--white); border-radius: 12px; }
+.molecule-display img { max-width: 200px; height: auto; margin: 0 auto; display: block; }
+.molecule-caption { font-size: 0.8rem; color: #7a6a5e; margin-top: 0.75rem; font-style: italic; }
+.technical-toggle { display: block; margin: 1rem auto 0; padding: 0.6rem 1.2rem; background: transparent; border: 1px solid var(--sage); color: var(--sage-dark); border-radius: 100px; font-size: 0.85rem; cursor: pointer; transition: all var(--transition); }
+.technical-toggle:hover { background: var(--sage); color: var(--white); }
+.technical-info { max-width: 700px; margin: 1rem auto 0; padding: 0; background: rgba(255,255,255,0.6); border-radius: 12px; border: 1px solid rgba(122,158,126,0.2); max-height: 0; overflow: hidden; opacity: 0; transition: all 0.4s ease; }
+.technical-info.open { max-height: 1200px; padding: 1.5rem; opacity: 1; }
 #ingredients { max-width: 1100px; margin: 0 auto; }
 .ingredients-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
 .ingredients-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; }
@@ -190,7 +202,7 @@ section:last-of-type { contain-intrinsic-size: auto 400px; }
 .step-card h4 { font-size: var(--fs-h3); font-weight: 500; color: var(--cream); margin-bottom: 0.5rem; }
 .step-card p { font-size: 0.88rem; color: rgba(247,243,236,0.65); line-height: 1.6; }
 #safety { padding: 4rem 5%; background: var(--sage); }
-.safety-inner { max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center; }
+.safety-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; text-align: center; }
 .safety-item h4 { font-family: var(--font-serif); font-size: 1.3rem; color: var(--white); margin-bottom: 0.4rem; }
 .safety-item p { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
 .safety-icon { font-size: 2rem; margin-bottom: 0.6rem; }
@@ -213,8 +225,8 @@ section:last-of-type { contain-intrinsic-size: auto 400px; }
 footer { background: var(--bark); color: rgba(247,243,236,0.55); text-align: center; padding: 2.5rem 5%; font-size: 0.82rem; }
 footer a { color: var(--sage); text-decoration: none; }
 @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
-@media (max-width: 768px) { .nav-toggle { display: block; } .nav-links { display: none; } .mobile-menu { display: flex; } .about-inner { grid-template-columns: 1fr; gap: 2.5rem; } .safety-inner { grid-template-columns: 1fr; text-align: center; } .form-row { grid-template-columns: 1fr; } #about, #how-to-use { margin: 0; border-radius: 0; } section { padding: 4rem 5%; } .leaf-deco { display: none; } .hero-title { font-size: clamp(2rem, 8vw, 3.5rem); } .ingredients-header { flex-direction: column; align-items: flex-start; } .contact-details { flex-direction: column; align-items: center; gap: 1rem; } .btn-group { gap: 0.5rem; } .btn { width: 100%; max-width: 280px; text-align: center; } }
-@media (max-width: 480px) { .hero-eyebrow { font-size: 0.9rem; padding: 0.35rem 1rem; } .ingredient-card, .step-card { padding: 1.2rem 1rem; } }
+@media (max-width: 768px) { .nav-toggle { display: block; } .nav-links { display: none; } .mobile-menu { display: flex; } .about-inner { grid-template-columns: 1fr; gap: 2.5rem; } .safety-inner { grid-template-columns: 1fr; text-align: center; } .form-row { grid-template-columns: 1fr; } #about, #how-to-use { margin: 0; border-radius: 0; } section { padding: 4rem 5%; } .leaf-deco { display: none; } .hero-title { font-size: clamp(2rem, 8vw, 3.5rem); } .hero-title-text { white-space: normal; } .ingredients-header { flex-direction: column; align-items: flex-start; } .contact-details { flex-direction: column; align-items: center; gap: 1rem; } .btn-group { gap: 0.5rem; } .btn { width: 100%; max-width: 280px; text-align: center; } }
+@media (max-width: 480px) { .hero-eyebrow { font-size: 0.9rem; padding: 0.35rem 1rem; } .ingredient-card, .step-card { padding: 1.2rem 1rem; } .technical-info { padding: 1rem; } }
 @media (hover: none) and (pointer: coarse) { .btn:hover { transform: none; } .ingredient-card:hover { transform: none; box-shadow: none; } .step-card:hover { background: rgba(247, 243, 236, 0.07); } }
 @media (min-width: 769px) { .mobile-menu { display: none !important; } .mobile-menu-close { display: none; } }
 .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--sage-dark), var(--sage)); z-index: 101; width: 0%; transition: width 0.08s linear; }
@@ -323,16 +335,15 @@ footer a { color: var(--sage); text-decoration: none; }
       <img class="nav-logo-icon" src="images/logo.svg" alt="" />
       <span class="nav-logo-text">Witbay<span>Naturals</span></span>
     </a>
-     <ul class="nav-links">
-      <li><a href="#about">Product</a></li>
-      <li><a href="#about-us">About</a></li>
-      <li><a href="#ingredients">Ingredients</a></li>
-      <li><a href="#how-to-use">How to Use</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#where-to-buy" class="nav-cta">Buy Now</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('mobileMenu').classList.add('active')">
+<ul class="nav-links">
+       <li><a href="#about">Product</a></li>
+       <li><a href="#about-us">About</a></li>
+       <li><a href="#how-to-use">How to Use</a></li>
+       <li><a href="#faq">FAQ</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <li><a href="#where-to-buy" class="nav-cta">Buy Now</a></li>
+     </ul>
+    <button class="nav-toggle" aria-label="Open menu" onclick="document.getElementById('mobileMenu').classList.toggle('active')">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
         <line x1="3" y1="6" x2="21" y2="6"/>
         <line x1="3" y1="12" x2="21" y2="12"/>
@@ -345,9 +356,6 @@ footer a { color: var(--sage); text-decoration: none; }
     <button class="mobile-menu-close" aria-label="Close menu" onclick="document.getElementById('mobileMenu').classList.remove('active')">&times;</button>
     <a href="#about-us" onclick="document.getElementById('mobileMenu').classList.remove('active')">About</a>
     <a href="#about" onclick="document.getElementById('mobileMenu').classList.remove('active')">Product</a>
-    <a href="#ingredients" onclick="document.getElementById('mobileMenu').classList.remove('active')">Ingredients</a>
-    <a href="#video-tutorial" onclick="document.getElementById('mobileMenu').classList.remove('active')">Demo</a>
-    <a href="#results" onclick="document.getElementById('mobileMenu').classList.remove('active')">Results</a>
     <a href="#how-to-use" onclick="document.getElementById('mobileMenu').classList.remove('active')">How to Use</a>
     <a href="#faq" onclick="document.getElementById('mobileMenu').classList.remove('active')">FAQ</a>
     <a href="#contact" onclick="document.getElementById('mobileMenu').classList.remove('active')">Contact</a>
@@ -611,35 +619,49 @@ document.addEventListener('DOMContentLoaded', function() {
        NOTE: ABOUT / PRODUCT INFO
        Edit the paragraphs below with your product description.
        ===================================================== -->
-   <section id="about">
-      <div class="about-inner">
-        <div class="about-text">
-          <p class="section-label">About Our Cleaner</p>
-          <h2 class="section-title">The Power of Orange & Vinegar</h2>
-          <hr class="divider" />
-          <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in <a href="https://www.healthline.com/nutrition/d-limonene" target="_blank" rel="noopener" style="color:var(--sage-dark);">D-limonene</a>, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps to dissolve mineral deposits.</p>
-          <p><strong>What is D-limonene?</strong> Found in citrus fruit peels (up to 97% of the essential oils), D-limonene is one of the most common terpenes in nature. Research suggests it may offer anti-inflammatory, antioxidant, and antimicrobial benefits. The FDA recognizes it as a safe food additive.</p>
-          <p>This powerful combination creates an effective, non-toxic cleaner that sanitizes surfaces, breaks down stubborn residues, and leaves a fresh citrus scent. Safe for use on countertops, appliances, floors, and more — no harsh chemicals, no fumes, just pure cleaning power.</p>
-          <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable containers to minimize waste.</p>
-          <a href="#ingredients" class="btn btn-primary" style="margin-top:1rem;">See What's Inside</a>
-        </div>
+<section id="about">
+       <div class="about-inner">
+         <div class="about-text">
+           <p class="section-label">About Our Cleaner</p>
+           <h2 class="section-title">The Power of Orange & Vinegar</h2>
+           <hr class="divider" />
+           <p>Witbay Naturals' all-purpose cleaner is made from simple ingredients: orange peels and white vinegar. The orange peels are rich in D-limonene, a powerful natural solvent that cuts through grease and grime, while the vinegar provides antibacterial properties and helps dissolve mineral deposits.</p>
+           <p>This powerful combination creates an effective, non-toxic cleaner that sanitizes surfaces, breaks down stubborn residues, and leaves a fresh citrus scent. Safe for use on countertops, appliances, floors, and more — no harsh chemicals, no fumes, just pure cleaning power.</p>
+           <p>Every bottle is handcrafted in small batches, using locally sourced orange peels and vinegar, packaged in reusable containers to minimize waste.</p>
+            <a href="#ingredients" class="btn btn-primary" style="margin-top:1rem;">See What's Inside</a>
+            <button class="technical-toggle" onclick="var ti=document.querySelector('.technical-info');ti.classList.toggle('open');this.textContent=ti.classList.contains('open')?'Show less':'Learn more about D-limonene';">Learn more about D-limonene</button>
+          </div>
 
-       <!-- NOTE: Product display card — swap the emoji for a real product image if available:
-            <img src="your-bottle.png" alt="Witbay Naturals bottle" style="width:80%;margin-bottom:1rem" /> -->
-       <div class="product-card">
-         <span class="bottle-icon">🍊</span>
-         <h3>Witbay Naturals All-Purpose Cleaner</h3>
-         <p>Orange Peel & Vinegar Formula<br>Ready to use — no dilution needed</p>
-         <div class="badge-row">
-           <span class="badge">Natural</span>
-           <span class="badge">Non-Toxic</span>
-           <span class="badge">Eco-Friendly</span>
-           <span class="badge">Locally Made</span>
-           <span class="badge">Handcrafted</span>
-         </div>
-       </div>
-     </div>
-   </section>
+        <div class="product-card">
+          <span class="bottle-icon">🍊</span>
+          <h3>Witbay Naturals All-Purpose Cleaner</h3>
+          <p>Orange Peel & Vinegar Formula<br>Ready to use — no dilution needed</p>
+          <div class="badge-row">
+            <span class="badge">Natural</span>
+            <span class="badge">Non-Toxic</span>
+            <span class="badge">Eco-Friendly</span>
+            <span class="badge">Locally Made</span>
+            <span class="badge">Handcrafted</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="technical-info">
+        <h3>Technical Details</h3>
+        <p><strong>What is D-limonene?</strong> Found in citrus fruit peels (up to 97% of the essential oils), D-limonene is one of the most common terpenes in nature. It's classified as a cyclic monoterpene and is generally recognized as safe for food use by the FDA [<a href="#ref-1" id="ref-link-1">1</a>].</p>
+        <div class="molecule-display">
+          <img src="images/(R)-Limonene.svg" alt="Molecular structure of D-limonene" loading="lazy" />
+          <p class="molecule-caption">The chemical structure of D-limonene (C₁₀H₁₆) — the natural compound that gives citrus peels their cleaning power.</p>
+        </div>
+        <p>D-limonene acts as a natural solvent by penetrating and dissolving grease, oil, and waxy residues. Studies have shown it possesses anti-inflammatory, antioxidant, and antimicrobial properties [<a href="#ref-2" id="ref-link-2">2</a>].</p>
+        <p><strong>References:</strong></p>
+        <ol class="references">
+          <li id="ref-1">FDA. "Food Additives Status List." U.S. Food and Drug Administration. <a href="https://www.fda.gov/" target="_blank" rel="noopener">fda.gov</a></li>
+          <li id="ref-2">Sun, J. "D-Limonene: safety and clinical applications." Alternative Medicine Review (2007).</li>
+          <li id="ref-3">Healthline. "D-Limonene: Benefits, Side Effects, and More." <a href="https://www.healthline.com/nutrition/d-limonene" target="_blank" rel="noopener">healthline.com</a></li>
+        </ol>
+      </div>
+    </section>
 
   <!-- =====================================================
        NOTE: INGREDIENTS
@@ -679,7 +701,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="ingredient-card">
             <span class="ingredient-icon">🍃</span>
             <h4>Natural Extracts</h4>
-           <p>Plant-based essential oils provide natural antimicrobial and antifungal properties while adding a fresh, clean scent.</p>
+           <p>Plant-based essential oils including cinnamon provide natural antimicrobial and antifungal properties while adding a fresh, clean scent.</p>
           </div>
 
          <!-- <div class="ingredient-card">
@@ -802,20 +824,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <div class="faq-item">
-          <button class="faq-question">Can I use Witbay Naturals on natural stone surfaces like marble or granite?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">This product is best suited for stainless steel, chrome, glass, ceramic, tile, laminate, and most sealed surfaces.</div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">How long does a 100ml bottle last?</button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">Each bottle is ready to use - no dilution needed. For average household use, one bottle typically lasts 1-2 month depending on frequency of use.</div>
-          </div>
-        </div>
-
-        <div class="faq-item">
           <button class="faq-question">Does Witbay Naturals contain any harmful chemicals?</button>
           <div class="faq-answer">
             <div class="faq-answer-inner">No. Our formula is made from simple & natural ingredients - nothing synthetic, nothing harsh.</div>
@@ -830,9 +838,16 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <div class="faq-item">
+          <button class="faq-question">What surfaces should I use Witbay Naturals on?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">This product is best suited for stainless steel, chrome, glass, ceramic, tile, laminate, and most sealed surfaces.</div>
+          </div>
+        </div>
+
+        <div class="faq-item">
           <button class="faq-question">What surfaces should I NOT use Witbay Naturals on?</button>
           <div class="faq-answer">
-            <div class="faq-answer-inner">Avoid using on unsealed wood or natural stone that hasn't been sealed. Always test on a small inconspicuous area first when trying a new surface.</div>
+            <div class="faq-answer-inner">Avoid using on wood, marble, or granite. Always test on a small inconspicuous area first when trying a new surface.</div>
           </div>
         </div>
 
@@ -842,6 +857,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="faq-answer-inner">Not at this time but as the demand grows we will consider wholesale options.</div>
           </div>
         </div>
+
+        
+        <div class="faq-item">
+          <button class="faq-question">How long does a 100ml bottle last?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Each bottle is ready to use - no dilution needed. For average household use, one bottle typically lasts 1-2 month depending on frequency of use.</div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -956,25 +980,35 @@ document.addEventListener('DOMContentLoaded', function() {
        NOTE: SAFETY HIGHLIGHTS
        Three key trust/safety signals. Update text as needed.
        ===================================================== -->
-   <section id="safety">
-     <div class="safety-inner">
-       <div class="safety-item">
-         <div class="safety-icon">🧒</div>
-         <h4>Safe Around Children</h4>
-         <p>Our natural formula contains no harsh chemicals, bleach, ammonia, or synthetic fragrances. Safe for use around children when used as directed.</p>
-       </div>
-       <div class="safety-item">
-         <div class="safety-icon">🐾</div>
-         <h4>Pet Friendly</h4>
-         <p>Non-toxic ingredients make our cleaner safe for homes with pets. No harmful residues left behind.</p>
-       </div>
-       <div class="safety-item">
-         <div class="safety-icon">🍊</div>
-         <h4>Natural Ingredients</h4>
-         <p>Made from orange peels, vinegar, and water - nothing artificial. Fully biodegradable and environmentally friendly.</p>
-       </div>
-     </div>
-   </section>
+<section id="safety">
+      <div class="safety-inner">
+        <div class="safety-item">
+          <div class="safety-icon">🧒</div>
+          <h4>Safe Around Children</h4>
+          <p>Our natural formula contains no harsh chemicals, bleach, ammonia, or synthetic fragrances. Safe for use around children when used as directed.</p>
+        </div>
+        <div class="safety-item">
+          <div class="safety-icon">🐾</div>
+          <h4>Pet Friendly</h4>
+          <p>Non-toxic ingredients make our cleaner safe for homes with pets. No harmful residues left behind.</p>
+        </div>
+        <div class="safety-item">
+          <div class="safety-icon">🍊</div>
+          <h4>Natural Ingredients</h4>
+          <p>Made from orange peels, vinegar, and water - nothing artificial. Fully biodegradable and environmentally friendly.</p>
+        </div>
+        <div class="safety-item">
+          <div class="safety-icon">⚠️</div>
+          <h4>Don't Mix with Bleach</h4>
+          <p>Never mix with other cleaners, especially bleach or ammonia. Combining can create harmful fumes.</p>
+        </div>
+        <div class="safety-item">
+          <div class="safety-icon">🌿</div>
+          <h4>Allergy Alert</h4>
+          <p>Contains natural citrus and cinnamon extracts. Be cautious of allegeries</p>
+        </div>
+      </div>
+    </section>
 
  
 
