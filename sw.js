@@ -1,4 +1,4 @@
-const CACHE_NAME = 'witbaynaturals-v2';
+const CACHE_NAME = 'witbaynaturals-v3';
 const STATIC_ASSETS = [
   '/',
   '/index.html',
@@ -6,18 +6,6 @@ const STATIC_ASSETS = [
   '/terms-of-service.html',
   '/disclaimer.html'
 ];
-
-const CACHE_STRATEGY = {
-  images: [
-    '/images/about.jpg',
-    '/images/video-thumb.jpg',
-    '/images/before-kitchen.jpg',
-    '/images/after-kitchen.jpg',
-    '/images/before-sticky.jpg',
-    '/images/after-clean.jpg',
-    '/images/map-demo.jpg'
-  ]
-};
 
 self.addEventListener('install', event => {
   event.waitUntil(
@@ -33,7 +21,7 @@ self.addEventListener('fetch', event => {
 
   if (request.method !== 'GET') return;
 
-  if (url.origin === location.origin && CACHE_STRATEGY.images.some(img => url.pathname.endsWith(img))) {
+  if (url.origin === location.origin && url.pathname.startsWith('/images/')) {
     event.respondWith(
       caches.open(CACHE_NAME).then(cache =>
         cache.match(request).then(cached => {
